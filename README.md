@@ -117,7 +117,7 @@
         2. loss2 = convert the fake image to grayscale, duplicate its value to 3 channels, label it as 0
         3. add loss1 ,loss2 to discriminator loss
         Unfortunately, the generator outputs grayscale image rather than the image with better shape
-<img src="bk.jpg" alt="Drawing" style="width: 400px;"/>
+<img src="./Report/bk.jpg" alt="Drawing" style="width: 400px;"/>
 
    ###  Multi-sampling generated image
        We found that the image generating quality is highly depends on the noise vector input. Consequently, the 
@@ -140,7 +140,7 @@
            
         - Do you use pre-trained model? (word embedding model, RNN model, etc.) 
    ### Skip thought vector  (upper64: generated lower64: ground truth) (inception score 0.114)
- <img src="./ST.jpg">
+ <img src="./Report/ST.jpg">
 
                 We had done some experiment using the pretrain model. However, we didn't use it in kaggle private
                 leaderboard since the competition is not allowed to do so. There are two benefits about using the
@@ -173,7 +173,7 @@
            
            Figure below: upper: fail case, lower: successful case
            
-<img src="SRCNN.jpg" alt="Drawing" style="width: 400px;"/>
+<img src="./Report/SRCNN.jpg" alt="Drawing" style="width: 400px;"/>
         - Any tricks or techniques you used in this task.
         
             # Sharpen-Filter post-processing
@@ -186,7 +186,7 @@
                 img  = enhancer.enhance(3.0)
             This process could increase about 0.03 inception score 
             Our model is able to achieve 0.117 inception score after applying the sharpen filter
- <img src="./sharp.jpg">
+ <img src="./Report/sharp.jpg">
    # Conclusions (interesting findings, pitfalls, takeaway lessons, etc.)
     We found that GAN is really hard to train since the loss of generator and discriminator are unstable and they
     don't have too much reference value (also hard to debug). Plus, this is the first time I understand the importance
@@ -198,7 +198,7 @@
     and adding some noise to them (see figure below). There's also a paper talking about how to generate near perfect 
     inception score from poor quality image 
     https://arxiv.org/abs/1801.01973
-<img src="suck.jpg" alt="Drawing" style="width: 400px;"/>
+<img src="./Report/suck.jpg" alt="Drawing" style="width: 400px;"/>
 
 
 ```python
