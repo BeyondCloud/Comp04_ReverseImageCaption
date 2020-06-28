@@ -2,7 +2,7 @@
 # Student ID, name of each team member.
     106061514 許鈞棠  106061536 廖學煒
 # Demo: Pick 5 descriptions from testing data and generate 5 images with different z respectively.    
-<img src="./25_inf.png">
+<img src="./Report/25_inf.png">
     (first row ~ last row)<br>
     0633: this flower has petals that are yellow with red blotches <br>
     0194: the flower has white stringy petals with yellow and purple pollen tubes<br>
@@ -97,7 +97,7 @@
         Whenever this happens, changing the batch_normalization layer to VBN could solve the problem.
         See paper https://arxiv.org/pdf/1606.03498.pdf
         
-<img src="./test.gif">
+<img src="./Report/test.gif">
    ### The n_critic parameter in WGAN
         In the original WGAN-GP paper, the authors train the discriminator 5 times for training generator 1 time. 
         Using the same setting for training the GAN-CLS leads the speed of convergence very slow.
